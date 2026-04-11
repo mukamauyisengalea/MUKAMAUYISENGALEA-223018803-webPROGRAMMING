@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter Premium</title>
+    <meta name="description" content="A professional and sleek currency converter application built with JavaScript.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Currency Converter APP</h1>
+
+        <div class="input-container">
+            <!-- Amount Input -->
+            <div class="field-group">
+                <label for="amount">Enter Amount IN FRW</label>
+                <input type="number" id="amount" placeholder="0.00" step="any">
+            </div>
+
+            <!-- Currency Select -->
+            <div class="field-group">
+                <label for="currency">Select Currency</label>
+                <select id="currency">
+                    <option value="" disabled selected>Choose Currency</option>
+                    <option value="USD">USD - US Dollar</option>
+                    <option value="EUR">EUR - Euro</option>
+                    <option value="GBP">GBP - British Pound</option>
+                    <option value="RWF">RWF - Rwandan Franc</option>
+                    <option value="KES">KES - Kenyan Shilling</option>
+                </select>
+            </div>
+
+            <!-- Rate Input -->
+            <div class="field-group">
+                <label for="rate">Rate</label>
+                <input type="number" id="rate" placeholder="Enter conversion rate" step="any">
+            </div>
+
+            <button type="button" class="btn-convert" id="convert-btn">Convert</button>
+        </div>
+
+        <div class="result-container">
+            <label>Result</label>
+            <div id="result-box">
+                <p id="result-text">Result Here ....</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
